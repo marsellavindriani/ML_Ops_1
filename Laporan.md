@@ -60,7 +60,7 @@ Dataset MovieLens ini terbagi menjadi beberapa dataset, antara lain:
 **1. Dataset ratings**
 
 ![image](https://github.com/user-attachments/assets/f0a6a80a-8f6c-4a99-827a-0f4892531f35)
-![image](https://github.com/user-attachments/assets/6b7036a7-b257-4197-9602-10f356f7410f)
+
 
 ![image](https://github.com/user-attachments/assets/3cacd269-3967-43e5-b983-2eaf25129e80)
 
@@ -69,14 +69,16 @@ Dataset MovieLens ini terbagi menjadi beberapa dataset, antara lain:
 Dari grafik, terlihat bahwa rating dengan nilai 4.0 adalah yang paling sering diberikan, sesuai dengan nilai modus yang kita hitung sebelumnya. Rating dengan nilai 3.0 dan 4.0 menjadi nilai tertinggi yang menunjukkan bahwa kebanyakan film menerima penilaian positif dari pengguna. Distribusi rating menunjukkan kecenderungan pengguna untuk memberikan rating yang lebih tinggi, dengan jumlah rating yang lebih rendah (seperti 0.5 dan 1.0) jauh lebih sedikit dibandingkan dengan rating tinggi.
 
 ![image](https://github.com/user-attachments/assets/cc15e739-f5d9-4856-8c11-34517aa72eaf)
-Visualisasi dan analisis rating rata-rata per genre film menunjukkan:
 
-Film-Noir, War, dan Documentary adalah genre dengan rating rata-rata tertinggi, menunjukkan bahwa film-film dalam genre ini cenderung sangat dihargai oleh pengguna.
+Visualisasi dan analisis rating rata-rata per genre film menunjukkan:
++Film-Noir, War, dan Documentary adalah genre dengan rating rata-rata tertinggi, menunjukkan bahwa film-film dalam genre ini cenderung sangat dihargai oleh pengguna.
 Di sisi lain, Comedy dan Horror memiliki rating rata-rata yang lebih rendah dibandingkan dengan genre lain, meskipun perbedaan rating antar genre tidak terlalu signifikan.
 Drama dan Crime, yang merupakan dua genre paling populer berdasarkan frekuensi, juga memiliki rating rata-rata yang cukup tinggi, menegaskan popularitas dan apresiasi mereka di kalangan pengguna.
 Genre (no genres listed), meskipun memiliki jumlah film yang relatif rendah, menunjukkan rating rata-rata yang sebanding dengan genre populer lainnya.
 
 **Rata-rata rating per Film**
+
+
 ![image](https://github.com/user-attachments/assets/dc623403-6a0b-4561-9e38-151612d2d32e)
 
 
@@ -98,12 +100,17 @@ Tag seperti religion, sci-fi, crime, dan politics menunjukkan ketertarikan pengg
 **3. Dataset movies**
 
 ![image](https://github.com/user-attachments/assets/b14d13c4-0ee3-44ec-8d7c-ec4bba0b6a50)
+
+
 ![image](https://github.com/user-attachments/assets/cf1b0387-3c8c-4afa-af0b-fdda95f4308e)
 
 
 **4. Dataset links**
 
 ![image](https://github.com/user-attachments/assets/a9341046-6bc8-467b-a09d-8833b9fca896)
+
+
+
 ![image](https://github.com/user-attachments/assets/9015f147-a98d-4548-8adf-88fb5fcef156)
 
 
@@ -123,6 +130,7 @@ Tahapan data preparation sistem rekomendasi yang menggunakan dataset MovieLens p
 4. Pembagian Data untuk Training dan Validasi
    Data dibagi menjadi set pelatihan dan validasi menggunakan train_test_split, dengan proporsi tertentu dari data dialokasikan untuk validasi. Pembagian ini memastikan bahwa model dapat diuji pada data yang belum pernah dilihat sebelumnya, mengukur kemampuan model dalam memprediksi rating dengan akurat pada situasi nyata. Hal ini membantu dalam mengidentifikasi dan mengatasi overfitting.
 Setiap tahapan data preparation ini untuk memastikan bahwa data yang digunakan dalam pemodelan sistem rekomendasi bersih, konsisten, dan siap untuk analisis lebih lanjut. Langkah-langkah ini dirancang untuk memaksimalkan efektivitas model rekomendasi baik dalam pendekatan berbasis konten maupun collaborative filtering.
+
 ![image](https://github.com/user-attachments/assets/1ace545c-633d-415c-95fe-797634b4fbc7)
 
 ## Modeling
@@ -147,6 +155,7 @@ Untuk melakukan ini, kita akan:
 
 
 ### Mendapatkan Rekomendasi
+
 ![image](https://github.com/user-attachments/assets/aa7d7185-b7d7-4299-bdee-a1ed69ec3a17)
 
 
@@ -165,6 +174,7 @@ Untuk melakukan ini, kita akan:
 
 
 ### Mendapatkan Rekomendasi
+
 ![image](https://github.com/user-attachments/assets/b22b0a84-ab50-4826-9990-50c40ee112c1)
 
 
