@@ -86,7 +86,8 @@ Genre (no genres listed), meskipun memiliki jumlah film yang relatif rendah, men
 
 ![image](https://github.com/user-attachments/assets/1f8a73f6-7420-4321-8cc6-12f137bd9d4e)
 
-![image](https://github.com/user-attachments/assets/116b79fc-caf8-4814-a946-5996c1851027)
+![image](https://github.com/user-attachments/assets/0a9fffcc-0ff0-42e7-a4a9-c82ab31501b9)
+
 
 
 ![image](https://github.com/user-attachments/assets/df589ca8-711e-4da5-ad85-e67dde77bd1b)
