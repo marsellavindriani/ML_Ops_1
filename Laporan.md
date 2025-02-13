@@ -101,17 +101,18 @@ Tag seperti religion, sci-fi, crime, dan politics menunjukkan ketertarikan pengg
 
 ![image](https://github.com/user-attachments/assets/b14d13c4-0ee3-44ec-8d7c-ec4bba0b6a50)
 
+![image](https://github.com/user-attachments/assets/d8fcd5de-de4c-4145-a61c-d1ea3bcc7b27)
 
-![image](https://github.com/user-attachments/assets/cf1b0387-3c8c-4afa-af0b-fdda95f4308e)
 
 
 **4. Dataset links**
 
 ![image](https://github.com/user-attachments/assets/a9341046-6bc8-467b-a09d-8833b9fca896)
 
+![image](https://github.com/user-attachments/assets/10f8b256-8756-4940-a35e-f21db7ffbbe4)
 
 
-![image](https://github.com/user-attachments/assets/9015f147-a98d-4548-8adf-88fb5fcef156)
+
 
 
 Seluruh dataset tidak memiliki missing value, duplikat, dan outlier
@@ -131,7 +132,7 @@ Tahapan data preparation sistem rekomendasi yang menggunakan dataset MovieLens p
    Data dibagi menjadi set pelatihan dan validasi menggunakan train_test_split, dengan proporsi tertentu dari data dialokasikan untuk validasi. Pembagian ini memastikan bahwa model dapat diuji pada data yang belum pernah dilihat sebelumnya, mengukur kemampuan model dalam memprediksi rating dengan akurat pada situasi nyata. Hal ini membantu dalam mengidentifikasi dan mengatasi overfitting.
 Setiap tahapan data preparation ini untuk memastikan bahwa data yang digunakan dalam pemodelan sistem rekomendasi bersih, konsisten, dan siap untuk analisis lebih lanjut. Langkah-langkah ini dirancang untuk memaksimalkan efektivitas model rekomendasi baik dalam pendekatan berbasis konten maupun collaborative filtering.
 
-![image](https://github.com/user-attachments/assets/1ace545c-633d-415c-95fe-797634b4fbc7)
+![image](https://github.com/user-attachments/assets/9015f147-a98d-4548-8adf-88fb5fcef156)
 
 ## Modeling
 Melakukan modeling terhadap data dengan 2 metode sistem rekomendasi untuk mengetahui sistem rekomendasi mana terbaik terhadap dataset ini.
