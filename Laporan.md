@@ -59,56 +59,16 @@ Dataset MovieLens ini terbagi menjadi beberapa dataset, antara lain:
 
 **1. Dataset ratings**
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/f0a6a80a-8f6c-4a99-827a-0f4892531f35)
+![image](https://github.com/user-attachments/assets/6b7036a7-b257-4197-9602-10f356f7410f)
 
-**2. Dataset tags**
+![image](https://github.com/user-attachments/assets/3cacd269-3967-43e5-b983-2eaf25129e80)
 
-![alt text](image-2.png)
-
-**3. Dataset movies**
-
-![alt text](image-3.png)
-
-**4. Dataset links**
-
-![alt text](image-4.png)
-
-Fitur pada keseluruhan dataset ini meliputi:
-
- - ratings.csv: userId, movieId, rating, timestamp
- - tags.csv: userId, movieId, tag, timestamp
- - movies.csv: movieId, title, genres
- - links.csv: movieId, imdbId, tmdbId
-
-
-**Visualisasi Distribusi Rating**
-
-![alt text](image-5.png)
+![image](https://github.com/user-attachments/assets/bcdaa538-a48b-4f36-8385-a1ef338c9224)
 
 Dari grafik, terlihat bahwa rating dengan nilai 4.0 adalah yang paling sering diberikan, sesuai dengan nilai modus yang kita hitung sebelumnya. Rating dengan nilai 3.0 dan 4.0 menjadi nilai tertinggi yang menunjukkan bahwa kebanyakan film menerima penilaian positif dari pengguna. Distribusi rating menunjukkan kecenderungan pengguna untuk memberikan rating yang lebih tinggi, dengan jumlah rating yang lebih rendah (seperti 0.5 dan 1.0) jauh lebih sedikit dibandingkan dengan rating tinggi.
 
-**Visualisasi Distribusi jumlah rating yang diberikan oleh setiap pengguna**
-![alt text](image-6.png)
-Visualisasi dan statistik deskriptif untuk jumlah rating per pengguna mengungkapkan beberapa poin penting:
-
-Rata-Rata Rating per Pengguna: Sekitar 165 rating, namun dengan standar deviasi yang cukup besar (269.48), menunjukkan variasi yang lebar dalam jumlah rating yang diberikan oleh pengguna.
-Minimum Rating per Pengguna: Setiap pengguna telah memberikan setidaknya 20 rating, sesuai dengan kriteria inklusi dalam dataset ini.
-Kuartil: 25% pengguna paling aktif memberikan 168 rating atau lebih, sedangkan 25% pengguna paling sedikit aktif memberikan 35 rating atau kurang.
-Maksimum: Ada pengguna yang memberikan hingga 2698 rating, menunjukkan adanya beberapa outlier yang sangat aktif dalam memberikan rating.
-Distribusi jumlah rating per pengguna menunjukkan adanya variasi yang signifikan dalam tingkat partisipasi pengguna, dengan sejumlah kecil pengguna yang sangat aktif. Hal ini umum dalam banyak sistem rekomendasi di mana sebagian pengguna cenderung lebih aktif daripada yang lain.
-
-**Visualisasi frekuensi genre**
-![alt text](image-7.png)
-Visualisasi dan data frekuensi genre film dalam dataset MovieLens menunjukkan:
-
-Drama adalah genre paling populer, diikuti oleh Comedy dan Thriller. Ini menunjukkan preferensi pengguna terhadap cerita yang mendalam atau menghibur.
-Genre seperti Action, Romance, dan Adventure juga cukup populer, menandakan kecenderungan umum pengguna terhadap film dengan narasi yang kuat atau elemen petualangan.
-Di sisi lain, genre seperti Film-Noir dan IMAX memiliki frekuensi yang lebih rendah, menunjukkan bahwa genre ini kurang umum atau spesifik niche dibandingkan dengan genre utama lainnya.
-Genre (no genres listed) menunjukkan bahwa ada beberapa film di dataset yang tidak memiliki genre yang terdaftar.
-Frekuensi genre ini dapat membantu dalam pengembangan fitur rekomendasi, menargetkan konten promosi, atau memahami tren pasar dalam industri film.
-
-**Rating Rata-Rata per Genre Film**
-![alt text](image-8.png)
+![image](https://github.com/user-attachments/assets/cc15e739-f5d9-4856-8c11-34517aa72eaf)
 Visualisasi dan analisis rating rata-rata per genre film menunjukkan:
 
 Film-Noir, War, dan Documentary adalah genre dengan rating rata-rata tertinggi, menunjukkan bahwa film-film dalam genre ini cenderung sangat dihargai oleh pengguna.
@@ -116,9 +76,18 @@ Di sisi lain, Comedy dan Horror memiliki rating rata-rata yang lebih rendah diba
 Drama dan Crime, yang merupakan dua genre paling populer berdasarkan frekuensi, juga memiliki rating rata-rata yang cukup tinggi, menegaskan popularitas dan apresiasi mereka di kalangan pengguna.
 Genre (no genres listed), meskipun memiliki jumlah film yang relatif rendah, menunjukkan rating rata-rata yang sebanding dengan genre populer lainnya.
 
-**Tag Paling Populer**
-![alt text](image-9.png)
+**Rata-rata rating per Film**
+![image](https://github.com/user-attachments/assets/dc623403-6a0b-4561-9e38-151612d2d32e)
 
+
+**2. Dataset tags**
+
+![image](https://github.com/user-attachments/assets/1f8a73f6-7420-4321-8cc6-12f137bd9d4e)
+
+![image](https://github.com/user-attachments/assets/116b79fc-caf8-4814-a946-5996c1851027)
+
+
+![image](https://github.com/user-attachments/assets/df589ca8-711e-4da5-ad85-e67dde77bd1b)
 Visualisasi dan daftar 20 tag paling populer menunjukkan:
 
 In Netflix queue adalah tag paling populer, dengan jauh melebihi frekuensi tag lainnya. Ini menunjukkan ketertarikan pengguna untuk menandai film yang mereka ingin tonton di Netflix.
@@ -126,7 +95,20 @@ Tag seperti atmospheric, thought-provoking, dan superhero juga populer, mencermi
 Disney, surreal, dan funny termasuk dalam tag populer lainnya, menunjukkan ketertarikan pengguna pada film-film dengan elemen fantasi, humor, atau yang diproduksi oleh Disney.
 Tag seperti religion, sci-fi, crime, dan politics menunjukkan ketertarikan pengguna pada tema-tema spesifik dalam film.
 
-![alt text](image-10.png)
+**3. Dataset movies**
+
+![image](https://github.com/user-attachments/assets/b14d13c4-0ee3-44ec-8d7c-ec4bba0b6a50)
+![image](https://github.com/user-attachments/assets/cf1b0387-3c8c-4afa-af0b-fdda95f4308e)
+
+
+**4. Dataset links**
+
+![image](https://github.com/user-attachments/assets/a9341046-6bc8-467b-a09d-8833b9fca896)
+![image](https://github.com/user-attachments/assets/9015f147-a98d-4548-8adf-88fb5fcef156)
+
+
+Seluruh dataset tidak memiliki missing value, duplikat, dan outlier
+
 
 
 ## Data Preparation
@@ -141,7 +123,8 @@ Tahapan data preparation sistem rekomendasi yang menggunakan dataset MovieLens p
 4. Pembagian Data untuk Training dan Validasi
    Data dibagi menjadi set pelatihan dan validasi menggunakan train_test_split, dengan proporsi tertentu dari data dialokasikan untuk validasi. Pembagian ini memastikan bahwa model dapat diuji pada data yang belum pernah dilihat sebelumnya, mengukur kemampuan model dalam memprediksi rating dengan akurat pada situasi nyata. Hal ini membantu dalam mengidentifikasi dan mengatasi overfitting.
 Setiap tahapan data preparation ini untuk memastikan bahwa data yang digunakan dalam pemodelan sistem rekomendasi bersih, konsisten, dan siap untuk analisis lebih lanjut. Langkah-langkah ini dirancang untuk memaksimalkan efektivitas model rekomendasi baik dalam pendekatan berbasis konten maupun collaborative filtering.
-   
+![image](https://github.com/user-attachments/assets/1ace545c-633d-415c-95fe-797634b4fbc7)
+
 ## Modeling
 Melakukan modeling terhadap data dengan 2 metode sistem rekomendasi untuk mengetahui sistem rekomendasi mana terbaik terhadap dataset ini.
 Adapun sistem rekomendasi yang digunakan antara lain : Content-Based Filtering dan Collaborative Filtering
@@ -158,17 +141,14 @@ Kekurangan:
 
 
 Untuk melakukan ini, kita akan:
+- Mengonversi combined_features menjadi matriks vektor dengan menggunakan TF-IDF Vectorizer.
+- Menghitung skor kesamaan antar film dengan menggunakan cosine similarity.
+- Mengembangkan fungsi yang menerima judul film sebagai input dan mengembalikan rekomendasi film serupa.
 
-Mengonversi combined_features menjadi matriks vektor dengan menggunakan TF-IDF Vectorizer.
-Menghitung skor kesamaan antar film dengan menggunakan cosine similarity.
-Mengembangkan fungsi yang menerima judul film sebagai input dan mengembalikan rekomendasi film serupa.
-
-### TF-IDF Vectorizer
-Untuk mengembangkan model sistem rekomendasi berbasis konten, langkah pertama adalah mengubah teks dalam combined_features menjadi suatu bentuk numerik yang dapat diproses oleh algoritma.
-![alt text](image-11.png)
 
 ### Mendapatkan Rekomendasi
-![alt text](image-12.png)
+![image](https://github.com/user-attachments/assets/aa7d7185-b7d7-4299-bdee-a1ed69ec3a17)
+
 
 
 ### Collaborative Filtering
@@ -185,7 +165,9 @@ Untuk mengembangkan model sistem rekomendasi berbasis konten, langkah pertama ad
 
 
 ### Mendapatkan Rekomendasi
-![alt text](image-14.png)
+![image](https://github.com/user-attachments/assets/b22b0a84-ab50-4826-9990-50c40ee112c1)
+
+
 
 
 Sehingga : 
@@ -196,16 +178,6 @@ Sehingga :
 
 ## Evaluation
 ### Kesimpulan
-Setelah dilakukan pra-pemrosesan pada dataset, langkah selanjutnya adalah modeling terhadap data. Pada tahap ini menggunakan 2 algoritma yaitu SVM dan Logistik Regression dengan tanpa parameter tambahan. Pertama-tama kedua model ini dilatih menggunakan data latih. Setelah itu kedua model akan diuji dengan data uji. Terakhir kedua model akan diukur nilai akurasinya. Perbandingan Hasil dari kedua model adalah berikut :
-Untuk evaluasi model Content Based Filtering digunakan metrik precision yang mengukur proporsi rekomendasi yang relevan terhadap jumlah total rekomendasi yang diberikan. Rumusnya adalah:
-
-![alt text](image-16.png)
-
-Sedangkan dalam evaluasi model Collaborative Filtering yang dikembangkan menggunakan TensorFlow dan Keras, Mean Square Error (MSE) digunakan sebagai metrik utama untuk mengukur akurasi prediksi model terhadap rating yang sebenarnya. MSE memberikan gambaran kuantitatif mengenai tingkat kesalahan prediksi model dalam mengestimasi rating film, dengan fokus pada bagaimana model mampu meminimalkan kesalahan tersebut sepanjang proses pelatihan dan validasi.
-
-MSE dihitung menggunakan rumus berikut:
-
-![alt text](image-15.png)
 
 Selama pelatihan, model dijalankan melalui beberapa epoch, dimana setiap epoch merupakan satu siklus di mana seluruh dataset training dilewati oleh model. Dalam proses ini, RMSE dihitung untuk setiap batch data sebagai indikator kinerja model. Model bertujuan untuk meminimalkan nilai RMSE dengan mengadjust bobotnya berdasarkan backpropagation dan optimasi gradient descent. Hasil pelatihan divisualisasikan dalam bentuk grafik yang menampilkan Training Loss dan Validation Loss mengilustrasikan perubahan nilai RMSE selama proses pelatihan untuk dataset training dan validation. Grafik ini penting karena memberikan gambaran tentang:
 
@@ -218,7 +190,8 @@ Kesimpulan Hasil evaluasi model Content Based Filtering mempunyai nilai precisio
 Sedangkan hasil Collaborative Filtering menggunakan Mean Squared Error (MSE) sebagai metrik seperti gambar berikut, teramati penurunan yang konsisten dalam loss pelatihan dan validasi selama iterasi, yang menandakan peningkatan kemampuan prediktif model. Penurunan ini mencapai stabilitas tanpa adanya divergensi antara keduanya, mengindikasikan bahwa model telah menghindari overfitting, yang sering menjadi tantangan dalam sistem rekomendasi.
 
 ### Visualisasi Metrik
-![alt text](image-13.png)
+![image](https://github.com/user-attachments/assets/4a0c183f-9c4b-462d-8726-ce72abe5b91c)
+
 
 Secara lebih khusus, loss validasi konvergen ke nilai yang dekat dengan loss pelatihan, mendekati nilai 0.9. Ini menunjukkan bahwa model mampu melakukan generalisasi dari data yang dilihat selama pelatihan ke data yang tidak dikenal, yang tercermin dalam dataset validasi.
 Melihat kembali pernyataan masalah dan tujuan dari proyek ini, yang bertujuan untuk memberikan rekomendasi yang relevan dan personal kepada pengguna, hasil yang diperoleh menunjukkan kesuksesan terhadap pencapaian tujuan tersebut. Namun, untuk menyelesaikan masalah yang diangkat dengan lebih komprehensif, direkomendasikan untuk melakukan pengujian lebih lanjut, khususnya dalam setting yang lebih beragam dan dengan kasus penggunaan yang lebih luas. Proyek ini telah berhasil menjawab pertanyaan-pertanyaan yang diajukan dalam pernyataan masalah dengan memanfaatkan dataset MovieLens untuk membangun dan mengevaluasi model rekomendasi berbasis content-based filtering dan collaborative filtering. Faktor-faktor yang mempengaruhi efektivitas model rekomendasi teridentifikasi melalui analisis eksploratif yang mendalam, yang mencakup distribusi rating dan analisis genre serta tag dari film.
