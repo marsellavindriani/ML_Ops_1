@@ -131,11 +131,16 @@ Tahapan data preparation sistem rekomendasi yang menggunakan dataset MovieLens p
    userId dan movieId diubah menjadi urutan angka berurutan dengan menggunakan .astype('category').cat.codes. Proses ini juga melibatkan pembuatan pemetaan ulang antara kode kategori dengan ID asli. Encoding ini menyederhanakan data dan mengurangi kompleksitas komputasional, memungkinkan algoritma collaborative filtering untuk lebih efisien dalam memproses data. Ini penting untuk teknik embedding yang digunakan dalam model collaborative filtering, yang membutuhkan input numerik.
 4. Pembagian Data untuk Training dan Validasi
    Data dibagi menjadi set pelatihan dan validasi menggunakan train_test_split, dengan proporsi tertentu dari data dialokasikan untuk validasi. Pembagian ini memastikan bahwa model dapat diuji pada data yang belum pernah dilihat sebelumnya, mengukur kemampuan model dalam memprediksi rating dengan akurat pada situasi nyata. Hal ini membantu dalam mengidentifikasi dan mengatasi overfitting.
+5. Persiapan model:
+- Mengonversi combined_features menjadi matriks vektor dengan menggunakan TF-IDF Vectorizer.
+- Menghitung skor kesamaan antar film dengan menggunakan cosine similarity.
+- Mengembangkan fungsi yang menerima judul film sebagai input dan mengembalikan rekomendasi film serupa.
+
 Setiap tahapan data preparation ini untuk memastikan bahwa data yang digunakan dalam pemodelan sistem rekomendasi bersih, konsisten, dan siap untuk analisis lebih lanjut. Langkah-langkah ini dirancang untuk memaksimalkan efektivitas model rekomendasi baik dalam pendekatan berbasis konten maupun collaborative filtering.
 
 ![image](https://github.com/user-attachments/assets/9015f147-a98d-4548-8adf-88fb5fcef156)
 
-## Modeling
+## Modeling and Result
 Melakukan modeling terhadap data dengan 2 metode sistem rekomendasi untuk mengetahui sistem rekomendasi mana terbaik terhadap dataset ini.
 Adapun sistem rekomendasi yang digunakan antara lain : Content-Based Filtering dan Collaborative Filtering
 
@@ -149,11 +154,6 @@ Kekurangan:
   1. Terbatas pada konten yang mirip dengan apa yang sudah diketahui; dapat menghasilkan rekomendasi yang monoton.
   2. Tidak mempertimbangkan pendapat atau preferensi pengguna lain, yang bisa membatasi keragaman rekomendasi.
 
-
-Untuk melakukan ini, kita akan:
-- Mengonversi combined_features menjadi matriks vektor dengan menggunakan TF-IDF Vectorizer.
-- Menghitung skor kesamaan antar film dengan menggunakan cosine similarity.
-- Mengembangkan fungsi yang menerima judul film sebagai input dan mengembalikan rekomendasi film serupa.
 
 
 ### Mendapatkan Rekomendasi
@@ -174,6 +174,8 @@ Untuk melakukan ini, kita akan:
   3. Kedua pendekatan memiliki tempatnya masing-masing dalam ekosistem rekomendasi, dengan pilihan antara keduanya bergantung pada konteks aplikasi dan ketersediaan data.
   4. Membuat model sistem rekomendasi film dengan menggunakan TensorFlow dan Keras. Fungsi RecommenderNet dari Keras mendefinisikan model untuk memprediksi rating film berdasarkan interaksi antara pengguna dan film.
 
+Proses hyperparameter training dilakukan dengan epochs 10
+
 
 ### Mendapatkan Rekomendasi
 
@@ -189,7 +191,17 @@ Sehingga :
 
 
 ## Evaluation
-### Kesimpulan
+Untuk evaluasi model Content Based Filtering digunakan metrik precision yang mengukur proporsi rekomendasi yang relevan terhadap jumlah total rekomendasi yang diberikan. Rumusnya adalah:
+
+![image](https://github.com/user-attachments/assets/fc6206a6-b96c-48f1-8456-4d824915e475)
+
+
+Sedangkan dalam evaluasi model Collaborative Filtering yang dikembangkan menggunakan TensorFlow dan Keras, Mean Square Error (MSE) digunakan sebagai metrik utama untuk mengukur akurasi prediksi model terhadap rating yang sebenarnya. MSE memberikan gambaran kuantitatif mengenai tingkat kesalahan prediksi model dalam mengestimasi rating film, dengan fokus pada bagaimana model mampu meminimalkan kesalahan tersebut sepanjang proses pelatihan dan validasi.
+
+MSE dihitung menggunakan rumus berikut:
+
+![image](https://github.com/user-attachments/assets/632f562b-14ce-407b-b791-0cf5c611a3e4)
+
 
 Selama pelatihan, model dijalankan melalui beberapa epoch, dimana setiap epoch merupakan satu siklus di mana seluruh dataset training dilewati oleh model. Dalam proses ini, RMSE dihitung untuk setiap batch data sebagai indikator kinerja model. Model bertujuan untuk meminimalkan nilai RMSE dengan mengadjust bobotnya berdasarkan backpropagation dan optimasi gradient descent. Hasil pelatihan divisualisasikan dalam bentuk grafik yang menampilkan Training Loss dan Validation Loss mengilustrasikan perubahan nilai RMSE selama proses pelatihan untuk dataset training dan validation. Grafik ini penting karena memberikan gambaran tentang:
 
